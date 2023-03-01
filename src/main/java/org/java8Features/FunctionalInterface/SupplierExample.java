@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public class SupplierExample {
     public static void main(String[] args) {
-        Supplier<Student> studentSupplier = ()-> new Student("Adam",2,3.6, "male", Arrays.asList("swimming", "basketball","volleyball"));
+        Supplier<Student> studentSupplier = ()-> new Student("Adam",2,3.6, "male", Arrays.asList("swimming", "basketball","volleyball"),4);
         System.out.println("Student is: " + studentSupplier.get());//supplier does't take any input, but returns when .get() is called
         Supplier<List<Student>> listSupplier = ()-> StudentDataBase.getAllStudents();
 

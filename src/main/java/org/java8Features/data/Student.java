@@ -9,13 +9,23 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
+    private long noOfNotebooks;
 
-    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, long noteBooksCount) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
         this.gender = gender;
         this.activities = activities;
+        this.noOfNotebooks = noteBooksCount;
+    }
+
+    public long getNoOfNotebooks(){
+        return this.noOfNotebooks;
+    }
+
+    public void setNoOfNotebooks(long noOfNotebooks){
+        this.noOfNotebooks = noOfNotebooks;
     }
 
     public String getGender() {
